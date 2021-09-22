@@ -1,0 +1,155 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+
+.logo {
+    padding-top: 10px;
+}
+
+.registerarea {
+    height: 643px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+}
+
+.login a {
+    color: #c81523;
+}
+
+.reg_form {
+    width: 700px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 160px;
+    text-align: right;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.inp {
+    height: 37px;
+    width: 242px;
+}
+
+.reg_form ul li input {
+    border: 1px solid #ccc;
+    padding: 0 5px;
+}
+
+.error {
+    color: #c81523;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.error_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/error.png") no-repeat;
+    margin-top: -4px;
+}
+
+.success {
+    color: green;
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+.success_icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/success.png") no-repeat;
+    margin-top: -4px;
+}
+
+.safe {
+    width: 700px;
+    font-size: 14px;
+    padding-left: 170px;
+}
+
+.safe em {
+    padding: 0 12px;
+    margin: 3px;
+}
+
+.weak {
+    background-color: #de1111;
+}
+
+.mid {
+    background-color: #f79100;
+}
+
+.strong {
+    background-color: #40b83f;
+}
+
+.agree a {
+    color: #1ba1e6;
+    font-size: 14px;
+}
+
+.agree {
+    font-size: 14px;
+    padding-left: 164px;
+}
+
+.submit-btn {
+    width: 250px;
+    height: 50px;
+    background-color: #c81523;
+    color: #ccc;
+    font-size: 16px;
+    margin: 20px 0 0 190px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.copyright {
+    line-height: 20px;
+}

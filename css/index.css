@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* main */
+
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+
+/* main -> focus */
+
+.focus {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 721px;
+    height: 455px;
+    background-color: skyblue;
+}
+
+.focus li img {
+    width: 100%;
+    height: 100%;
+}
+
+.focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    display: block;
+    width: 721px;
+    height: 455px;
+    float: left;
+}
+
+.prev,
+.next {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffff;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.next {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.promo-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    /*   background: rgba(255, 255, 255, 0.3);*/
+    border-radius: 7px;
+}
+
+.promo-nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    background-color: #ffff;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.promo-nav .selected {
+    background-color: #ff5000;
+}
+
+.newsflash {
+    float: right;
+    width: 255px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+    font-size: 14px;
+}
+
+.news-hd .more::after {
+    content: "\e903";
+    font-family: "icomoon";
+    padding-left: 5px;
+}
+
+.news-bd {
+    height: 24px;
+    line-height: 24px;
+}
+
+
+/*  */
+
+.news-bd ul li {
+    padding: 1px 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    display: table;
+    width: 256px;
+    height: 209;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 64px;
+    height: 70px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    border-left: 0;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+}
+
+.lifeservice ul li:nth-child(1)>i {
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+.lifeservice ul li:nth-child(2)>i {
+    background: url(../images/icons.png) no-repeat -19px -156px;
+}
+
+.lifeservice ul li:nth-child(3)>i {
+    background: url(../images/icons.png) no-repeat -81px -15px;
+}
+
+.lifeservice ul li:nth-child(4)>i {
+    background: url(../images/icons.png) no-repeat -79px -86px;
+}
+
+.lifeservice ul li:nth-child(5)>i {
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+.lifeservice ul li:nth-child(6)>i {
+    background: url(../images/icons.png) no-repeat -19px -156px;
+}
+
+.lifeservice ul li:nth-child(7)>i {
+    background: url(../images/icons.png) no-repeat -81px -15px;
+}
+
+.lifeservice ul li:nth-child(8)>i {
+    background: url(../images/icons.png) no-repeat -79px -156px;
+}
+
+.lifeservice ul li:nth-child(9)>i {
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+.lifeservice ul li:nth-child(10)>i {
+    background: url(../images/icons.png) no-repeat -19px -156px;
+}
+
+.lifeservice ul li:nth-child(11)>i {
+    background: url(../images/icons.png) no-repeat -81px -15px;
+}
+
+.lifeservice ul li:nth-child(12)>i {
+    background: url(../images/icons.png) no-repeat -79px -156px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+.bargain img {
+    width: 100%;
+}
+
+
+/* recommend */
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom-hd {
+    float: left;
+    height: 163px;
+    width: 222px;
+    background-color: #ebebeb;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.recom-bd ul {
+    display: table;
+}
+
+.recom-bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom-bd ul li:nth-child(-n + 3)::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.recom-bd ul li a {
+    display: block;
+    width: 163px;
+    height: 163px;
+}
+
+.recom-bd ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* category */
+
+.nav-category {
+    position: fixed;
+    width: 70px;
+    left: 50%;
+    top: 150px;
+    margin-left: -673px;
+    display: none;
+}
+
+.current {
+    background-color: #c81623;
+    font-weight: 500;
+    color: #f9f9f9;
+}
+
+.nav-category li {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+
+/* floor - electrical */
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list {
+    float: right;
+    line-height: 30px;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 10px;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+    margin-right: 10px;
+}
+
+.col_210 ul a {
+    float: left;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+
+/* change a to 'block' element to give a a border */
+
+.bb {
+    display: inline-block;
+    border-bottom: 1px solid #ccc;
+}

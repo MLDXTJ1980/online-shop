@@ -1,0 +1,158 @@
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.cart-wrap h5 {
+    color: #b1191a;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.cart-wrap .cart-head,
+.cart-subtotal {
+    background-color: #f5f5f5;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+
+.cart-wrap ul {
+    margin: 0 10px;
+}
+
+.cart-wrap ul li {
+    float: left;
+}
+
+.cart-wrap .checkbox {
+    width: 60px;
+}
+
+.cart-wrap .article {
+    width: 550px;
+}
+
+.cart-wrap .price {
+    width: 140px;
+}
+
+.cart-wrap .qty {
+    width: 140px;
+}
+
+.cart-wrap .total {
+    width: 140px;
+}
+
+.cart-wrap .delete {
+    width: 140px;
+}
+
+.cart-wrap .cart-articles {
+    margin-bottom: 10px;
+}
+
+
+/* cart-articles */
+
+.cart-articles ul {
+    display: table;
+    border-bottom: 2px solid #ccc;
+}
+
+.cart-articles li {
+    position: relative;
+    height: 150px;
+    vertical-align: text-top;
+    margin: 10px 0;
+}
+
+.cart-articles li .pic {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.cart-articles li a image {
+    width: 100%;
+}
+
+.check-cart-articles {
+    background-color: #fff4e8;
+}
+
+.cart-articles li p {
+    position: relative;
+    float: left;
+    width: 430px;
+    margin-left: 10px;
+}
+
+.qty-form {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.qty-form a {
+    width: 25px;
+}
+
+.qty-form input {
+    width: 50px;
+}
+
+.qty-form a,
+.qty-form input {
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #666666;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cart-subtotal ul {
+    display: table;
+    width: 100%;
+}
+
+.cart-subtotal li {
+    width: 150px;
+}
+
+.cart-subtotal .amount-qty,
+.cart-subtotal .amount-sum,
+.cart-subtotal .btn-area {
+    float: right;
+}
+
+.cart-subtotal .btn-area {
+    width: 250px;
+    background-color: #b1191a;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.amount-qty em,
+.amount-sum em {
+    color: #b1191a;
+    font-weight: 700;
+    margin: 0 5px;
+}
