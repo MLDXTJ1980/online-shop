@@ -192,31 +192,31 @@
 }
 
 .lifeservice ul li:nth-child(5)>i {
-    background: url(../images/icons.png) no-repeat -19px -15px;
+    background: url(../images/icons.png) no-repeat -141px -15px;
 }
 
 .lifeservice ul li:nth-child(6)>i {
-    background: url(../images/icons.png) no-repeat -19px -156px;
+    background: url(../images/icons.png) no-repeat -206px -12px;
 }
 
 .lifeservice ul li:nth-child(7)>i {
-    background: url(../images/icons.png) no-repeat -81px -15px;
+    background: url(../images/icons.png) no-repeat -144px -84px;
 }
 
 .lifeservice ul li:nth-child(8)>i {
-    background: url(../images/icons.png) no-repeat -79px -156px;
+    background: url(../images/icons.png) no-repeat -207px -82px;
 }
 
 .lifeservice ul li:nth-child(9)>i {
-    background: url(../images/icons.png) no-repeat -19px -15px;
+    background: url(../images/icons.png) no-repeat -19px -154px;
 }
 
 .lifeservice ul li:nth-child(10)>i {
-    background: url(../images/icons.png) no-repeat -19px -156px;
+    background: url(../images/icons.png) no-repeat -141px -150px;
 }
 
 .lifeservice ul li:nth-child(11)>i {
-    background: url(../images/icons.png) no-repeat -81px -15px;
+    background: url(../images/icons.png) no-repeat -207px -155px;
 }
 
 .lifeservice ul li:nth-child(12)>i {
@@ -249,13 +249,62 @@
     padding-top: 16px;
 }
 
+.recom-bd {
+    position: relative;
+    float: left;
+    height: 163px;
+    width: 978px;
+    background-color: #ebebeb;
+    text-align: center;
+    padding: 2px 30px;
+}
+
+.recom-bd span {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.recom-bd .left {
+    top: 67px;
+    left: 0px;
+}
+
+.recom-bd .right {
+    top: 67px;
+    right: 7px;
+}
+
+.recom-bd .left::after {
+    content: "\e902";
+    font-family: "icomoon";
+    padding-left: 0px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.recom-bd .right::after {
+    content: "\e903";
+    font-family: "icomoon";
+    padding-left: 2px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
 .recom-bd ul {
     display: table;
+    width: 970px;
 }
 
 .recom-bd ul li {
     position: relative;
     float: left;
+    display: none;
 }
 
 .recom-bd ul li:nth-child(-n + 3)::after {
@@ -268,15 +317,30 @@
     background-color: #ddd;
 }
 
+.active {
+    display: block;
+}
+
+.deactive {
+    display: none;
+}
+
 .recom-bd ul li a {
     display: block;
-    width: 163px;
+    width: 151px;
     height: 163px;
+    overflow: hidden;
 }
 
 .recom-bd ul li img {
-    width: 100%;
-    height: 100%;
+    margin: 5px;
+    width: 98%;
+    height: 98%;
+    transition: all 0.4s;
+}
+
+.recom-bd ul li img:hover {
+    transform: translateY(-7px);
 }
 
 
@@ -346,6 +410,22 @@
 .tab_list_item>div {
     float: left;
     height: 361px;
+    padding: 10px;
+}
+
+.tab_list_item a {
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.tab_list_item a img {
+    width: 96%;
+    margin: 2%;
+    transition: all 0.4s;
+}
+
+.tab_list_item a img:hover {
+    transform: scale(1.1);
 }
 
 .col_210 {
@@ -362,21 +442,30 @@
     float: left;
     width: 85px;
     height: 34px;
-    border-bottom: 1px solid #ccc;
     text-align: center;
     line-height: 34px;
-    margin-right: 10px;
+    margin-right: 4px;
 }
 
-.col_210 ul a {
+.col_210 a {
+    width: 100%;
+    padding: 5px;
     float: left;
     display: block;
     border-bottom: 1px solid #ccc;
     text-align: center;
+    overflow: hidden;
 }
 
 .col_329 {
     width: 329px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_329 a {
+    display: block;
+    width: 100%;
 }
 
 .col_221 {

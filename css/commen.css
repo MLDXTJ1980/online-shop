@@ -29,29 +29,57 @@
     color: #c81623;
 }
 
-.shortcut {
+section.shortcut {
     width: 100%;
     height: 31px;
-    line-height: 31px;
     background-color: #f1f1f1;
 }
 
-.shortcut ul li {
+.fl ul li,
+li.arrow-icon {
     float: left;
+    display: block;
+    height: 31px;
+    line-height: 31px;
 }
 
-.shortcut .fr ul li:nth-child(even) {
-    width: 1px;
-    height: 12px;
-    background-color: #666;
-    margin: 9px 15px 0 15px;
+li.arrow-icon {
+    width: 100px;
 }
 
-.arrow-icon::after {
+li.arrow-icon a {
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+li.arrow-icon>a:hover {
+    cursor: pointer;
+}
+
+.arrow-icon a::after {
     content: "\e901";
     font-family: "icomoon";
     font-size: 16px;
     margin-left: 6px;
+}
+
+.arrow-icon ul {
+    display: table;
+    display: none;
+}
+
+.arrow-icon>ul>li {
+    display: block;
+    width: 100px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.arrow-icon>ul>li:hover {
+    cursor: pointer;
+    color: #c81623;
 }
 
 

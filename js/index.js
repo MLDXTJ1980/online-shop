@@ -1,9 +1,19 @@
 /* 1). mouseenter->prev and next display, mouseleave->prev and next display none*/
 window.addEventListener("load", function() {
+    // initialize the recom-bd
+    function showActiveLi(first, last) {
+        $(".recom-bd>ul li").fadeOut(5)
+        $(".recom-bd>ul li").each(function(i, el) {
+            if (i >= first && i <= last) {
+                $(".recom-bd>ul li").eq(i).fadeIn(5)
+            }
+        })
+    }
     var prev = document.querySelector(".prev")
     var next = document.querySelector(".next")
     var focus = document.querySelector(".focus")
     var focusWidth = focus.offsetWidth
+    showActiveLi(0, 5)
     focus.addEventListener("mouseenter", function() {
         clearInterval(timer)
         timer = null
@@ -13,9 +23,7 @@ window.addEventListener("load", function() {
     focus.addEventListener("mouseleave", function() {
         prev.style.display = "none"
         next.style.display = "none"
-        timer = setInterval(function() {
-            next.click()
-        }, 2000)
+        timer = setInterval(slide, 2000)
     })
 
     /* 2).  the qty of circles = the qty of images */
@@ -95,7 +103,8 @@ window.addEventListener("load", function() {
         }
         circles.children[circle].className = "selected"
     }
-    var timer = setInterval(function() {
+
+    var slide = function() {
         if (flag) {
             flag = false
             if (num == ul.children.length - 1) {
@@ -113,9 +122,78 @@ window.addEventListener("load", function() {
             }
             circleChange()
         }
-    }, 2000)
+    }
+    var timer = setInterval(slide, 2000)
 
     $(function() {
+        // dropdown list in section#shortcut slide down in hover
+        $("li.arrow-icon").hover(
+                function() {
+                    $(this)
+                        .children("ul")
+                        .stop()
+                        .slideDown(400)
+                        .parents(".shortcut")
+                        .stop()
+                        .animate({ height: "123px" })
+                },
+                function() {
+                    $(this)
+                        .children("ul")
+                        .stop()
+                        .slideUp(400)
+                        .parents(".shortcut")
+                        .stop()
+                        .animate({ height: "31px" })
+                }
+            )
+            // recom-bd slider, click right arrow to slide the pic to the right
+
+        $(".right").click(function() {
+            var last = getLastActiveIndex()
+
+            if (last == 11) {
+                $(this).unbind("click")
+            } else {
+                var first = last - 5
+                showActiveLi(first + 1, last + 1)
+            }
+        })
+
+        // recom-bd slider, click left arrow to slide the pic to the left
+        $(".left").click(function() {
+            var first = getFirstActiveIndex()
+            if (first == 0) {
+                $(this).unbind("click")
+            } else {
+                var last = first + 5
+                showActiveLi(first - 1, last - 1)
+            }
+        })
+
+        function getLastActiveIndex() {
+            var last = 0
+            $(".recom-bd>ul li").each(function(i, el) {
+                if ($(".recom-bd>ul li").eq(i).is(":visible")) {
+                    if (i > last) {
+                        last = i
+                    }
+                }
+            })
+            return last
+        }
+
+        function getFirstActiveIndex() {
+            var first = 11
+            $(".recom-bd>ul li").each(function(i, el) {
+                if ($(".recom-bd>ul li").eq(i).is(":visible")) {
+                    if (i < first) {
+                        first = i
+                    }
+                }
+            })
+            return first
+        }
         // nav-category show up if window scroll to the .recom box
         var boxTop = $(".recom").offset().top
         var flag = true
